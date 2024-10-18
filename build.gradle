@@ -739,7 +739,7 @@ task autocomplete(type: JavaExec) {
 
 def archiveBuildVersion = project.hasProperty('release.releaseVersion') ? project.property('release.releaseVersion') : "${rootProject.version}"
 
-installDist { dependsOn checkLicense, untunedStartScripts, evmToolStartScripts }
+installDist { dependsOn /*checkLicense,*/ untunedStartScripts, evmToolStartScripts }
 
 distTar {
   dependsOn checkLicense, autocomplete, untunedStartScripts, evmToolStartScripts

@@ -28,6 +28,7 @@ jar {
 }
 
 dependencies {
+  api project(':psi')
   api 'org.slf4j:slf4j-api'
   api 'org.web3j:core'
 
