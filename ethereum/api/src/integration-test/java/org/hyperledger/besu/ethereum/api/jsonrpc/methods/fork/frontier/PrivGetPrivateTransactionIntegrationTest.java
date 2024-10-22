@@ -141,7 +141,7 @@ public class PrivGetPrivateTransactionIntegrationTest {
 
     privacyController =
         new RestrictedDefaultPrivacyController(
-            blockchain, privateStateStorage, enclave, null, null, null, null, null);
+            blockchain, privateStateStorage, enclave, null, null, null, null, null, null);
   }
 
   @AfterEach

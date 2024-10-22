@@ -188,7 +188,7 @@ public class PsiMain {
         StringBuilder hexString = new StringBuilder("0x");
         for (ByteBuffer byteBuffer : set) {
             byte[] bytes = new byte[byteBuffer.limit()];
-            byteBuffer.rewind();
+            byteBuffer.position(0);
             byteBuffer.get(bytes);
             for (byte b : bytes) {
                 hexString.append(String.format("%02X", b));
